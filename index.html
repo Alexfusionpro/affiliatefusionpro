@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AffiliateFusion - Din plattform för tekniska produkter, hälsa, modell och mer.">
+    <title>AffiliateFusion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>AffiliateFusion</h1>
+        <p>Din plattform för tekniska produkter, hälsa, modell och mer.</p>
+    </header>
+
+    <!-- Kategorier -->
+    <section id="teknik">
+        <h2>Teknik</h2>
+        <p>Här hittar du de senaste tekniska produkterna och recensioner.</p>
+    </section>
+
+    <section id="modell">
+        <h2>Modell</h2>
+        <p>De senaste trenderna inom modellvärlden och mode.</p>
+    </section>
+
+    <section id="hälsa">
+        <h2>Hälsa</h2>
+        <div class="product">
+            <img src="https://m.media-amazon.com/images/I/51r2a9pOdHL._AC_SY879_.jpg" alt="Optimum Nutrition Whey Protein">
+            <div class="product-details">
+                <h3>Optimum Nutrition Whey Proteinpulver</h3>
+                <p><strong>Beskrivning:</strong> Detta vassleproteinpulver från Optimum Nutrition hjälper till att stödja muskeltillväxt och återhämtning. Det innehåller essentiella BCAA-aminosyror som ger näring till muskler efter träning.</p>
+                <p><strong>Fördelar:</strong> Högkvalitativt protein, perfekt för idrottare och de som vill öka sitt proteinintag.</p>
+                <a href="https://www.amazon.se/Optimum-Nutrition-vassleproteinpulver-muskeltillv%C3%A4xt-BCAA-aminosyror/dp/B000QSNYGI?ref_=Oct_d_obs_d_20649893031_0&pd_rd_w=7WiLM&content-id=amzn1.sym.8e9858ab-ed0e-42a3-a6cc-15eb5b3dbb9c&pf_rd_p=8e9858ab-ed0e-42a3" target="_blank">
+                    <button>Se produkt på Amazon</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <h2>Vanliga frågor (FAQ)</h2>
+        <div class="faq-item">
+            <h3 onclick="toggleAnswer(1)">Hur lång är leveranstiden?</h3>
+            <div class="faq-answer" id="answer1">
+                <p>Leveranstiden varierar beroende på produkt och leverantör. Oftast inom 5-7 arbetsdagar.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <h3 onclick="toggleAnswer(2)">Hur kan jag returnera en produkt?</h3>
+            <div class="faq-answer" id="answer2">
+                <p>Du kan returnera en produkt genom att följa Amazons returpolicy. Klicka på "Beställningar" och välj "Returnera produkt".</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <h3 onclick="toggleAnswer(3)">Vilka betalningsmetoder accepteras?</h3>
+            <div class="faq-answer" id="answer3">
+                <p>Amazon accepterar olika betalningsmetoder, inklusive kreditkort, PayPal och Amazon-presentkort.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 AffiliateFusion | <a href="#">Kontakta oss</a> | <a href="#">Om oss</a> | <a href="#">Sekretesspolicy</a></p>
+    </footer>
+
+    <!-- JavaScript för FAQ -->
+    <script>
+        function toggleAnswer(answerNumber) {
+            var answer = document.getElementById("answer" + answerNumber);
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+            } else {
+                answer.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

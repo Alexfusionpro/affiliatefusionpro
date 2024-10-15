@@ -1,0 +1,99 @@
+/* Allmän stil för sidan */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Rubrikstil */
+h1, h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* Färg för varje kategori */
+#teknik {
+    background-color: #3498db;
+    color: white;
+}
+
+#modell {
+    background-color: #e74c3c;
+    color: white;
+}
+
+#hälsa {
+    background-color: #2ecc71;
+    color: white;
+}
+
+/* FAQ Stil */
+.faq {
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-item h3 {
+    cursor: pointer;
+    background-color: #2980b9;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.faq-answer {
+    display: none;
+    background-color: #e3e3e3;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+/* Stil för länkar och knappar */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1c598a;
+}
+
+/* Produktsektion stil */
+.product {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.product img {
+    width: 150px;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+}
+
+.product-details {
+    overflow: hidden;
+}
